@@ -1,0 +1,50 @@
+.project-card {
+    width: 100%;
+    min-height: 400px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.is-even {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    text-align: end;
+}
+.project-card-name {
+    font-size: 4vw;
+    color: var(--color-1);
+}
+.project-card-description {
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+.is-even .project-card-image-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.project-card-image-container {
+    display: flex;
+}
+.project-card-image-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.project-card-image-container svg {
+    font-size: 3vw;
+    margin: 30px 40px 30px 40px;
+
+    cursor: pointer;
+}
+.project-card-image {
+    width: 60%;
+    border-radius: 20px;
+}
+.project-card-footer {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 5px solid white;
+}
