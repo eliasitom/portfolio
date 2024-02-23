@@ -1,0 +1,24 @@
+.contact-me-card {
+    margin-bottom: 550px;
+    padding-bottom: 100px;
+    margin-top: 150px;
+}
+
+.contact-me-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-me-methods div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-me-methods p {
+    font-size: 18px;
+}
+.contact-me-methods svg {
+    font-size: 22px;
+    margin-right: 10px;
+}

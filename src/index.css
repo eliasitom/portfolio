@@ -1,71 +1,63 @@
 :root {
-  --color-0: #0C2D57;
-  --color-0-0: #081d39;
-  --color-1: #FC6736;
-  --color-2: #97ff97;
-  --color-3: #EFECEC;
+    --important-c: rgb(252, 190, 19);
+    --border-c-1: rgb(85, 52, 206);
+    --border-c-2: rgb(139, 120, 226);
 
+    --border-r: 20px
 }
-.root {
-  background-color: blue;
-
+body {
+    background-color: #050116;
+    opacity: 1;
+    background-image: radial-gradient(#000f30 2px, #050116 2px);
+    background-size: 40px 40px;
 }
 
 * {
-  margin: 0;
-  font-family: 'Fjalla One', sans-serif;
-  color: var(--color-3);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    color: rgb(188, 214, 231);
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+*::-webkit-scrollbar {
+    background-color: rgba(47, 42, 62, 0.422);
+    border-radius: 50px;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #1f1942;
 }
 
-body {
-  background-color: var(--color-0);
-
+button {
+    border: solid 2px var(--border-c-1);
+    border-radius: var(--border-r);
+    padding: 5px 15px 5px 15px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
-img {
-  z-index: 11;
+button:hover {
+    animation-name: button-hover;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 }
-
+button:not(:hover) {
+    animation-name: button-not-hover;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
 
 @keyframes button-hover {
-  0% {
-    background-color: var(--color-2);
-  }
+    0% {
+        border: solid 2px var(--border-c-1);
+    }
+    100% {
+        border: solid 2px var(--border-c-2);
 
-  100% {
-    background-color: #d3baa8;
-  }
+    }
 }
-
 @keyframes button-not-hover {
-  0% {
-    background-color: #d3baa8;
-  }
-
-  100% {
-    background-color: var(--color-2);
-  }
+    0% {
+        border: solid 2px var(--border-c-2);
+    }
+    100% {
+        border: solid 2px var(--border-c-1);
+    }
 }
-
-
-
-@keyframes svg-hover {
-  0% {
-      opacity: 0.7;
-  }
-  100% {
-      opacity: 1;
-  }
-}
-@keyframes svg-not-hover {
-  0% {
-      opacity: 1;
-  }
-  100% {
-      opacity: 0.7;
-  }
-}
-
-
-

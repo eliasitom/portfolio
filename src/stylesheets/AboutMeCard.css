@@ -1,0 +1,47 @@
+.about-me-card {
+    margin-top: 100px;
+}
+.about-me-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.about-me-header svg {
+    font-size: 32px;
+    margin-right: 30px;
+}
+.about-me-header h1 {
+    font-size: 34px;
+    padding: 0;
+}
+.about-me-description {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.about-me-description span {
+    color: var(--important-c);
+}
+
+.about-me-footer {
+    display: flex;
+    margin-top: 20px;
+}
+.about-me-footer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 50px;
+    margin-right: 15px;
+}
+.about-me-footer svg {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.about-me-footer p {
+    font-size: 15px;
+    width: fit-content;
+}
