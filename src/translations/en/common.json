@@ -1,0 +1,35 @@
+{
+    "userOptions": {
+        "english": "English",
+        "spanish": "Spanish"
+    },
+    "navBar": {
+        "home": "Home",
+        "myExperience": "My experience",
+        "aboutMe": "About me",
+        "contact": "Contact"
+    },
+    
+    "home": {
+        "contactButton": "Work with me",
+        "description": "Fullstack developer. Since I found my passion for finding solutions to logical problems in 2017, I haven't stopped programming. And today I invite you to contact me if you are interested in what I do."
+    },
+    "experience": {
+        "title": "Experience",
+        "respositoryButton": "Repository",
+        "webSiteButton": "Web site",
+
+        "tasklim": "An excellent way to create and manage your tasks and those of your team. everything in a simple, elegant and free way." ,
+        "textCipher": "a didactic tool to learn a little about encryption and decryption algorithms such as \"aes\", \"pbkdf2\", \"rabbit\", among others."
+    },
+    "aboutMe": {
+        "title": "More about me",
+
+        "description0": "I love tackling complex challenges and finding creative solutions to technical problems. I am a firm believer in continuous learning and am always looking for opportunities to improve my skills and keep up to date with the latest trends in technology.",
+        "description1": "Outside of the development world, I enjoy exploring new experiences, reading about philosophy, classic novels, and spending time outdoors enjoying nature. I am excited about future opportunities to collaborate on exciting projects and continue to grow as a professional in the field of web development."
+    },
+    "contactMe": {
+        "title": "Contact me",
+        "description": "If you are intrested in hiring me, call me, email me or connect and chat with me via LinkedIn!"
+    }
+}

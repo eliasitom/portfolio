@@ -8,7 +8,9 @@ import { HomeCard } from './components/HomeCard';
 import { ExperienceCard } from './components/ExperienceCard';
 import { AboutMeCard } from './components/AboutMeCard';
 import { ContactCard } from './components/ContactCard';
-
+import { useTranslation } from 'react-i18next';
+import i18n from "i18next"
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 
 const profileData = {
@@ -26,6 +28,8 @@ const profileData = {
 
 function App() {
   const [currentSection, setCurrentSection] = useState("home")
+  const { t } = useTranslation()
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,6 +54,14 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [])
+
+  const changeLenguage = (e) => {
+    setSelectedLanguage(prev => {
+      i18n.changeLanguage(prev === "en" ? "es" : "en");
+      return prev === "en" ? "es" : "en"
+    })
+  }
+
   return (
     <main className='app'>
       <aside>
@@ -58,10 +70,30 @@ function App() {
           <FaDiamond className={currentSection === "experience" ? 'current-section' : ""} />
           <FaDiamond className={currentSection === "about-me" ? 'current-section' : ""} />
           <FaDiamond className={currentSection === "contact-me" ? 'current-section' : ""} />
-          <a href='#home' className={currentSection === "home" ? 'current-section' : ""}>Home</a>
-          <a href='#experience' className={currentSection === "experience" ? 'current-section' : ""}>My experience</a>
-          <a href="#about-me" className={currentSection === "about-me" ? 'current-section' : ""}>About me</a>
-          <a href='#contact-me' className={currentSection === "contact-me" ? 'current-section' : ""}>Contact me</a>
+          <a
+            href='#home'
+            className={currentSection === "home" ? 'current-section' : ""}
+          >
+            {t("common:navBar.home")}
+          </a>
+          <a
+            href='#experience'
+            className={currentSection === "experience" ? 'current-section' : ""}
+          >
+            {t("common:navBar.myExperience")}
+          </a>
+          <a
+            href="#about-me"
+            className={currentSection === "about-me" ? 'current-section' : ""}
+          >
+            {t("common:navBar.aboutMe")}
+          </a>
+          <a
+            href='#contact-me'
+            className={currentSection === "contact-me" ? 'current-section' : ""}
+          >
+            {t("common:navBar.contact")}
+          </a>
         </div>
       </aside>
       <section>
@@ -72,19 +104,19 @@ function App() {
           <ExperienceCard />
         </div>
         <div id='about-me' style={{ height: "fitContent", backgroundColor: "pruple" }}>
-          <AboutMeCard profileData={profileData} />
+          <AboutMeCard profileData={profileData} selectedLenguage={selectedLanguage}/>
         </div>
         <div id='contact-me'>
           <ContactCard />
         </div>
       </section>
       <div className='page-options'>
-        <p>English</p>
+      <span class="fi fi-us" style={{marginRight: "10px"}}/>
         <>
-          <input type='checkbox' id='lenguage-toggle' />
+          <input type='checkbox' id='lenguage-toggle' onClick={changeLenguage} />
           <label for="lenguage-toggle" />
         </>
-        <p>Spanish</p>
+        <span class="fi fi-es" style={{marginLeft: "10px"}}/>
       </div>
     </main>
   )

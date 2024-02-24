@@ -1,33 +1,38 @@
+import { useTranslation } from "react-i18next";
 import "../stylesheets/AboutMeCard.css"
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 
-const largeDescription1 = <p>
+const largeDescription1_en = <p>
   Hello! My name is Elias Espondaburu,
   and I am a passionate 21 year old <span>fullstack developer with three years of experience in the web development field </span>
   originally from Uruguay.
   I have worked with a variety of technologies and tools to create innovative digital solutions.
-  </p>
-const largeDescription2 = <p>
+</p>
+const largeDescription2_en = <p>
   My main focus is on developing web applications using <span>modern technologies like
     React.js for the frontend and Node.js with Express.js for the backend</span>. Additionally, <span>
     I have experience in NoSQL
     databases such as MongoDB and implementing real-time communication using Socket.IO</span>.
 </p>
-const largeDescription3 = <p>
-  I love tackling complex challenges and finding creative solutions to technical problems.
-  I am a firm believer in continuous learning and am always looking for opportunities to improve my skills and keep
-  up to date with the latest trends in technology.
+
+const largeDescription1_es = <p>
+  ¡Hola! Mi nombre es Elías Espondaburu,
+  y soy un apasionado <span>desarrollador fullstack de 21 años con tres años de experiencia en el campo del desarrollo web </span>
+  Originario de Uruguay.
+  He trabajado con una variedad de tecnologías y herramientas para crear soluciones digitales innovadoras.
 </p>
-const largeDescription4 = <p>
-  Outside of the development world, I enjoy exploring new experiences, reading about philosophy,
-  classic novels, and spending time outdoors enjoying nature. I am excited about future opportunities to collaborate on
-  exciting projects and continue to grow as a professional in the field of web development.`,
-  largeDescription5: `If you are interested in working together or just want to connect, feel free to contact me!
+const largeDescription2_es = <p>
+  Mi enfoque principal es el desarrollo de aplicaciones web utilizando <span>tecnologías modernas como
+    React.js para el frontend y Node.js con Express.js para el backend</span>. Además, <span>
+    Tengo experiencia en bases de datos NoSQL
+     como MongoDB e implementación de comunicación en tiempo real usando Socket.IO</span>.
 </p>
 
-export const AboutMeCard = ({ profileData }) => {
+
+export const AboutMeCard = ({ profileData, selectedLenguage }) => {
+  const { t } = useTranslation()
 
   const openGitHub = () => {
     window.open(profileData.links.github, "_blank")
@@ -40,19 +45,19 @@ export const AboutMeCard = ({ profileData }) => {
     <article className='about-me-card'>
       <div className='about-me-header'>
         <IoPersonSharp />
-        <h1>More about me</h1>
+        <h1>{t("common:aboutMe.title")}</h1>
       </div>
       <p className="about-me-description">
-        {largeDescription1}
+        {selectedLenguage === "en" ? largeDescription1_en : largeDescription1_es}
       </p>
       <p className="about-me-description">
-        {largeDescription2}
+        {selectedLenguage === "en" ? largeDescription2_en : largeDescription2_es}
       </p>
       <p className="about-me-description">
-        {largeDescription3}
+        {t("common:aboutMe.description0")}
       </p>
       <p className="about-me-description">
-        {largeDescription4}
+        {t("common:aboutMe.description1")}
       </p>
       <div className='about-me-footer'>
         <button onClick={openLinkedin}>

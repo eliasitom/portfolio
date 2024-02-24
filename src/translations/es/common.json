@@ -1,0 +1,35 @@
+{
+    "userOptions": {
+        "english": "Inglés",
+        "spanish": "Español"
+    },
+    "navBar": {
+        "home": "Inicio",
+        "myExperience": "Mi experiencia",
+        "aboutMe": "Sobre mí",
+        "contact": "Contacto"
+    },
+    
+    "home": {
+        "contactButton": "Trabaja conmigo",
+        "description": "Desarrollador fullstack. Desde que encontré mi pasión por encontrar soluciones a problemas lógicos en 2017, no he dejado de programar. Y hoy te invito a contactarme si te interesa lo que hago."
+    },
+    "experience": {
+        "title": "Experiencia",
+        "respositoryButton": "Repositorio",
+        "webSiteButton": "Sitio web",
+
+        "tasklim": "Una excelente manera de crear y gestionar tus tareas y las de tu equipo. todo de una forma sencilla, amigable y gratuita." ,
+        "textCipher": "una herramienta didáctica para aprender un poco sobre algoritmos de cifrado y descifrado como \"aes\", \"pbkdf2\", \"rabbit\", entre otros."
+    },
+    "aboutMe": {
+        "title": "Sobre mí",
+
+        "description0": "Me encanta abordar desafíos complejos y encontrar soluciones creativas a problemas técnicos. Creo firmemente en el aprendizaje continuo y siempre estoy buscando oportunidades para mejorar mis habilidades y mantenerme actualizado con las últimas tendencias en tecnología.",
+        "description1": "Fuera del mundo del desarrollo, disfruto explorar nuevas experiencias, leer sobre filosofía, novelas clásicas y pasar tiempo al aire libre disfrutando de la naturaleza. Estoy entusiasmado con las oportunidades futuras para colaborar en proyectos interesantes y seguir creciendo como profesional en el campo del desarrollo web."
+    },
+    "contactMe": {
+        "title": "Contáctame",
+        "description": "Si estás interesado en contratarme, llámame, envíame un correo electrónico o conéctate y chatea conmigo a través de LinkedIn."
+    }
+}

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import "../stylesheets/ProjectCard.css"
 import { FaGithub, FaNodeJs } from "react-icons/fa";
 import { RiGlobalLine, RiReactjsLine } from "react-icons/ri";
@@ -38,6 +39,7 @@ const TechnologyItem = ({ technology }) => {
 }
 
 export const ProjectCard = ({ projectData }) => {
+  const {t} = useTranslation()
 
   const openGitHub = () => {
     window.open(projectData.links.github, "_blank")
@@ -62,8 +64,8 @@ export const ProjectCard = ({ projectData }) => {
         </div>
         <p>{projectData.description}</p>
         <div className="project-card-options">
-          <button onClick={openGitHub}><FaGithub /> Repository</button>
-          <button onClick={openWebSite}><RiGlobalLine /> Web site</button>
+          <button onClick={openGitHub}><FaGithub />{t("common:experience.respositoryButton")}</button>
+          <button onClick={openWebSite}><RiGlobalLine />{t("common:experience.webSiteButton")}</button>
         </div>
       </div>
     </div>
