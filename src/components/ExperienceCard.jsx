@@ -4,7 +4,7 @@ import { ProjectCard } from "./ProjectCard"
 
 import tasklimImage from "../assets/TasklimImage.png"
 import textCipherImage from "../assets/textcipherimage.jpg"
-import chattyImage from "../assets/chattyImage.png"
+import chattyImage from "../assets/ChattyImage.png"
 
 import { useTranslation } from "react-i18next"
 
