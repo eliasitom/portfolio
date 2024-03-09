@@ -20,7 +20,8 @@
         "webSiteButton": "Web site",
 
         "tasklim": "An excellent way to create and manage your tasks and those of your team. everything in a simple, elegant and free way." ,
-        "textCipher": "a didactic tool to learn a little about encryption and decryption algorithms such as \"aes\", \"pbkdf2\", \"rabbit\", among others."
+        "textCipher": "a didactic tool to learn a little about encryption and decryption algorithms such as \"aes\", \"pbkdf2\", \"rabbit\", among others.",
+        "chatty": "Chatty is a small project to experiment with web sockets technology, with a real-time chat and a friendly interface, Chatty is my first public project related to web sockets using Socket.io"
     },
     "aboutMe": {
         "title": "More about me",

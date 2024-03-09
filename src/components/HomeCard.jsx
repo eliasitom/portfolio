@@ -22,7 +22,7 @@ export const HomeCard = ({ profileData }) => {
         <img src={profileData.profilePicture} />
         <button onClick={openLinkedin}>{t("common:home.contactButton")} <PiShoppingBagOpen /></button>
       </div>
-      <h1>Elias Espondaburu</h1>
+      <h1>Elías Espondaburu</h1>
       <p>{t("common:home.description")}</p>
       <div className='home-card-footer'>
         <button onClick={openLinkedin}>

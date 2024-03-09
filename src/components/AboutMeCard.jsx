@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 
 const largeDescription1_en = <p>
-  Hello! My name is Elias Espondaburu,
+  Hello! My name is Elías Espondaburu,
   and I am a passionate 21 year old <span>fullstack developer with three years of experience in the web development field </span>
   originally from Uruguay.
   I have worked with a variety of technologies and tools to create innovative digital solutions.

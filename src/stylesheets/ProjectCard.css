@@ -1,5 +1,5 @@
 .project-card {
-    width: 900px;
+    width: fit-content;
     height: 300px;
     display: flex;
     margin-bottom: 100px;
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 600px;
     overflow: hidden;
 
     background: linear-gradient(180deg, rgba(47, 6, 209, 0.175), rgba(58, 28, 7, 0.474));
@@ -78,6 +78,8 @@
 .project-card-technologies {
     display: flex;
     margin-bottom: 10px;
+
+    width: fit-content;
 }
 .technology-item {
     display: flex;
@@ -87,10 +89,12 @@
     border: solid 1px rgb(221, 241, 253);
     padding: 5px 10px 5px 10px;
     width: fit-content;
+    max-height: 30px !important;
     border-radius: var(--border-r);
 }
 .technology-item p {
     font-size: 14px;
+    text-wrap: nowrap;
 }
 .technology-item svg {
     font-size: 18px;

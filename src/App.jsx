@@ -63,62 +63,64 @@ function App() {
   }
 
   return (
-    <main className='app'>
-      <aside>
-        <div>
-          <FaDiamond className={currentSection === "home" ? 'current-section' : ""} />
-          <FaDiamond className={currentSection === "experience" ? 'current-section' : ""} />
-          <FaDiamond className={currentSection === "about-me" ? 'current-section' : ""} />
-          <FaDiamond className={currentSection === "contact-me" ? 'current-section' : ""} />
-          <a
-            href='#home'
-            className={currentSection === "home" ? 'current-section' : ""}
-          >
-            {t("common:navBar.home")}
-          </a>
-          <a
-            href='#experience'
-            className={currentSection === "experience" ? 'current-section' : ""}
-          >
-            {t("common:navBar.myExperience")}
-          </a>
-          <a
-            href="#about-me"
-            className={currentSection === "about-me" ? 'current-section' : ""}
-          >
-            {t("common:navBar.aboutMe")}
-          </a>
-          <a
-            href='#contact-me'
-            className={currentSection === "contact-me" ? 'current-section' : ""}
-          >
-            {t("common:navBar.contact")}
-          </a>
+    <>
+      <main className='app'>
+        <aside>
+          <div>
+            <FaDiamond className={currentSection === "home" ? 'current-section' : ""} />
+            <FaDiamond className={currentSection === "experience" ? 'current-section' : ""} />
+            <FaDiamond className={currentSection === "about-me" ? 'current-section' : ""} />
+            <FaDiamond className={currentSection === "contact-me" ? 'current-section' : ""} />
+            <a
+              href='#home'
+              className={currentSection === "home" ? 'current-section' : ""}
+            >
+              {t("common:navBar.home")}
+            </a>
+            <a
+              href='#experience'
+              className={currentSection === "experience" ? 'current-section' : ""}
+            >
+              {t("common:navBar.myExperience")}
+            </a>
+            <a
+              href="#about-me"
+              className={currentSection === "about-me" ? 'current-section' : ""}
+            >
+              {t("common:navBar.aboutMe")}
+            </a>
+            <a
+              href='#contact-me'
+              className={currentSection === "contact-me" ? 'current-section' : ""}
+            >
+              {t("common:navBar.contact")}
+            </a>
+          </div>
+        </aside>
+        <section>
+          <div id='home'>
+            <HomeCard profileData={profileData} />
+          </div>
+          <div id='experience'>
+            <ExperienceCard />
+          </div>
+          <div id='about-me' style={{ height: "fitContent", backgroundColor: "pruple" }}>
+            <AboutMeCard profileData={profileData} selectedLenguage={selectedLanguage} />
+          </div>
+          <div id='contact-me'>
+            <ContactCard />
+          </div>
+        </section>
+        <div className='page-options'>
+          <span class="fi fi-us" style={{ marginRight: "10px" }} />
+          <>
+            <input type='checkbox' id='lenguage-toggle' onClick={changeLenguage} />
+            <label for="lenguage-toggle" />
+          </>
+          <span class="fi fi-es" style={{ marginLeft: "10px" }} />
         </div>
-      </aside>
-      <section>
-        <div id='home'>
-          <HomeCard profileData={profileData} />
-        </div>
-        <div id='experience'>
-          <ExperienceCard />
-        </div>
-        <div id='about-me' style={{ height: "fitContent", backgroundColor: "pruple" }}>
-          <AboutMeCard profileData={profileData} selectedLenguage={selectedLanguage}/>
-        </div>
-        <div id='contact-me'>
-          <ContactCard />
-        </div>
-      </section>
-      <div className='page-options'>
-      <span class="fi fi-us" style={{marginRight: "10px"}}/>
-        <>
-          <input type='checkbox' id='lenguage-toggle' onClick={changeLenguage} />
-          <label for="lenguage-toggle" />
-        </>
-        <span class="fi fi-es" style={{marginLeft: "10px"}}/>
-      </div>
-    </main>
+      </main>
+    </>
   )
 }
 
