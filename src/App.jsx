@@ -1,7 +1,7 @@
 import './App.css'
 import { useState, useEffect } from 'react';
 
-import profilePicture from "./assets/119717954.png"
+import profilePicture from "./assets/profilePicture.png"
 
 import { FaDiamond } from "react-icons/fa6";
 import { HomeCard } from './components/HomeCard';
