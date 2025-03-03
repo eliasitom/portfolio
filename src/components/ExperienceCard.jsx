@@ -3,8 +3,8 @@ import "../stylesheets/ExperienceCard.css"
 import { ProjectCard } from "./ProjectCard"
 
 import tasklimImage from "../assets/TasklimImage.png"
-import textCipherImage from "../assets/textcipherimage.jpg"
-import chattyImage from "../assets/ChattyImage.png"
+import textCipherImage from "../assets/TextCipherImage.png"
+import eliasBlogImage from "../assets/EliasBlogImage.png"
 
 import { useTranslation } from "react-i18next"
 
@@ -36,14 +36,14 @@ export const ExperienceCard = () => {
       technologies: ["react"]
     },
     {
-      name: "chatty",
-      description: t("common:experience.chatty"),
-      image: chattyImage,
+      name: "Elías Blog",
+      description: t("common:experience.eliasBlog"),
+      image: eliasBlogImage,
       links: {
-        github: "https://github.com/eliasitom/mini-chat",
-        website: "https://chatty-web-sockets.netlify.app"
+        github: "https://github.com/eliasitom/EliasBlog",
+        website: "https://eliasblog.netlify.app"
       },
-      technologies: ["react", "nodejs", "mongodb", "socket.io"]
+      technologies: ["react"]
     }
   ]
 

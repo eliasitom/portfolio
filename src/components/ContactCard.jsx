@@ -26,10 +26,6 @@ export const ContactCard = () => {
 					<MdEmail />
 					<p>eliasespondaburucontacto0@gmail.com</p>
 				</div>
-				<div>
-					<FaPhone />
-					<p>+59897221999</p>
-				</div>
 			</div>
 		</div>
 	)

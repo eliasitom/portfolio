@@ -7,7 +7,7 @@ import { IoPersonSharp } from "react-icons/io5";
 const largeDescription1_en = <p>
   Hello! My name is Elías Espondaburu,
   and I am a passionate 21 year old <span>fullstack developer with three years of experience in the web development field </span>
-  originally from Uruguay.
+  originally from Uruguay, currently living in Spain.
   I have worked with a variety of technologies and tools to create innovative digital solutions.
 </p>
 const largeDescription2_en = <p>
@@ -20,7 +20,7 @@ const largeDescription2_en = <p>
 const largeDescription1_es = <p>
   ¡Hola! Mi nombre es Elías Espondaburu,
   y soy un apasionado <span>desarrollador fullstack de 21 años con tres años de experiencia en el campo del desarrollo web </span>
-  Originario de Uruguay.
+  Originario de Uruguay, actualmente viviendo en España.
   He trabajado con una variedad de tecnologías y herramientas para crear soluciones digitales innovadoras.
 </p>
 const largeDescription2_es = <p>

@@ -14,7 +14,7 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 
 const profileData = {
-  description: `I am Elías Espondaburu, a 21 years old Uruguayan guy. Since I found my passion for finding
+  description: `I am Elías Espondaburu, a 21 years old Uruguayan guy, currently living in Spain. Since I found my passion for finding
   solutions to logical problems in 2017, I haven't stopped programming. And today I invite
   you to contact me if you are interested in what I do.`,
   largeDescription3: ``,
