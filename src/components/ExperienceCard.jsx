@@ -2,7 +2,7 @@ import "../stylesheets/ExperienceCard.css"
 
 import { ProjectCard } from "./ProjectCard"
 
-import tasklimImage from "../assets/TasklimImage.png"
+import stellaVogueImage from "../assets/StellaVogueImage.png"
 import textCipherImage from "../assets/TextCipherImage.png"
 import eliasBlogImage from "../assets/EliasBlogImage.png"
 
@@ -16,14 +16,14 @@ export const ExperienceCard = () => {
 
   const projectsData = [
     {
-      name: "tasklim",
-      description: t("common:experience.tasklim"),
-      image: tasklimImage,
+      name: "stella vogue",
+      description: t("common:experience.stellavogue"),
+      image: stellaVogueImage,
       links: {
-        github: "https://github.com/eliasitom/tasklim",
-        website: "https://tasklim.com"
+        github: "https://github.com/eliasitom/StellaVogue",
+        website: "https://stellavogue.netlify.app"
       },
-      technologies: ["react", "nodejs", "mongodb"]
+      technologies: ["react"]
     },
     {
       name: "text cipher",
